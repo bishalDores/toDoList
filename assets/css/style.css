@@ -1,0 +1,76 @@
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: black;
+}
+.main-header{
+    background-color: orange;
+    min-height: 150px;
+    margin-top: 80px;
+}
+.main-header h1{
+    padding-top: 21px;
+}
+.custom_btn{
+    background-color: black;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+.custom_btn:hover{
+    background-color: darkgreen;
+    
+}
+.custom_btn-2{
+    background-color: orange;
+    border: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    cursor: pointer;
+    position: relative;
+    padding:  5px 5px 5px 35px;
+    list-style-type: none;
+   background-color: #eee;
+/* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+ul li:hover {
+  background: #ddd;
+}
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.custom_close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0px 22px 12px 16px;
+}
+.custom_close:hover {
+  background-color: orange;
+  color: white;
+}
